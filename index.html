@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style >
+
+		li 
+		{
+			list-style  : none;
+			margin-right: 50px;
+			border-left : 2px solid black;
+			border-right: 2px solid black;
+			border-top: 2px solid black;
+			border-bottom: 2px solid black;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		li:hover
+		{
+			color: white;
+			 background-color:#7C4DFF;
+		
+		}
+	</style>
+	<script>
+		$(document).ready(function()
+		{
+			$("#one1").click(function()
+			{
+				$("#one2").hide("slow");
+				$("#one3").hide("slow");
+				$("#one4").hide("slow");
+
+			});
+			$("#one1").mouseenter(function()
+			{
+				$("#one2").show("slow");
+				$("#one3").show("slow");
+				$("#one4").show("slow");
+
+
+			});
+
+			$("#one2").click(function()
+			{
+				$("#one1").hide("slow");
+				$("#one3").hide("slow");
+				$("#one4").hide("slow");
+
+			});
+			$("#one2").mouseenter(function()
+			{
+				$("#one1").show("slow");
+				$("#one3").show("slow");
+				$("#one4").show("slow");
+
+
+			});
+
+   
+
+			$("#one3").click(function()
+			{
+				$("#one2").hide("slow");
+				$("#one1").hide("slow");
+				$("#one4").hide("slow");
+
+			});
+			$("#one3").mouseenter(function()
+			{
+				$("#one2").show("slow");
+				$("#one1").show("slow");
+				$("#one4").show("slow");
+
+			});
+
+
+			$("#one4").click(function()
+			{
+				$("#one2").hide("slow");
+				$("#one3").hide("slow");
+				$("#one1").hide("slow");
+
+			});
+			$("#one4").mouseenter(function()
+			{
+				$("#one2").show("slow");
+				$("#one3").show("slow");
+				$("#one1").show("slow");
+
+			});
+
+
+
+			$("#one1").click(function()
+			{
+				$("#home").css({display:'none'});
+                $("#gallery").css({display:'none'});
+                $("#contact").css({display:'none'});
+				var x=$("#about").css({display:'block'});
+				document.getElementById("about1")=x;
+			});
+
+
+
+
+			$("#one2").click(function()
+			{
+				$("#home").css({display:'none'});
+                $("#about").css({display:'none'});
+                $("#contact").css({display:'none'});
+
+				var x=$("#gallery").css({display:'block'});
+				
+				document.getElementById("gallery1")=x;
+			});
+
+			$("#one3").click(function()
+			{
+				$("#home").css({display:'none'});
+                $("#gallery").css({display:'none'});
+                $("#about").css({display:'none'});
+
+				var x=$("#contact").css({display:'block'});
+				
+				document.getElementById("contact1")=x;
+			});
+
+			$("#one4").click(function()
+			{
+				$("#about").css({display:'none'});
+                $("#gallery").css({display:'none'});
+                $("#contact").css({display:'none'});
+
+				var x=$("#home").css({display:'block'});
+				
+				document.getElementById("home1")=x;
+			});
+
+
+
+      $("#myimg1").mouseenter(function()
+      {
+        $("#myimg1").css({width:300,height:300});
+        $("#myimg2").css({width:150,height:150});
+        $("#myimg3").css({width:150,height:150});
+       /* $("#myimg4").css({width:150,height:150});
+        $("#myimg5").css({width:150,height:150});
+*/
+
+      });
+      $("#myimg2").mouseenter(function()
+      {
+
+        $("#myimg2").css({width:300,height:300});
+        $("#myimg1").css({width:150,height:150});
+        $("#myimg3").css({width:150,height:150});
+        /*$("#myimg4").css({width:150,height:150});
+        $("#myimg5").css({width:150,height:150});*/
+
+
+      });
+      $("#myimg3").mouseenter(function()
+      {
+        $("#myimg3").css({width:300,height:300});
+        $("#myimg2").css({width:150,height:150});
+        $("#myimg1").css({width:150,height:150});
+        /*$("#myimg4").css({width:150,height:150});
+        $("#myimg5").css({width:150,height:150});*/
+
+
+      });
+       $("#myimg4").mouseenter(function()
+      {
+        $("#myimg4").css({width:250,height:250});
+        /*$("#myimg2").css({width:150,height:150});
+        $("#myimg3").css({width:150,height:150});
+        $("#myimg1").css({width:150,height:150});*/
+        $("#myimg5").css({width:150,height:150});
+
+
+      });
+       $("#myimg5").mouseenter(function()
+      {
+        $("#myimg5").css({width:250,height:250});
+       /* $("#myimg2").css({width:150,height:150});
+        $("#myimg3").css({width:150,height:150});*/
+        $("#myimg4").css({width:150,height:150});
+        //$("#myimg1").css({width:150,height:150});
+
+
+      });
+      
+
+      $("#myimg1").mouseleave(function()
+      {
+        $("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});
+       /* $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});*/
+
+
+      });
+       $("#myimg2").mouseleave(function()
+      {
+        $("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});
+      /*  $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});
+*/
+
+      });
+        $("#myimg3").mouseleave(function()
+      {
+        $("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});
+      /*  $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});
+*/
+
+      });
+         $("#myimg4").mouseleave(function()
+      {
+       /* $("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});*/
+        $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});
+
+
+      });
+          $("#myimg4").mouseleave(function()
+      {
+        /*$("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});*/
+        $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});
+
+
+      });
+      $("#myimg5").mouseleave(function()
+      {
+        /*$("#myimg1").css({width:200,height:200});
+        $("#myimg2").css({width:200,height:200});
+        $("#myimg3").css({width:200,height:200});*/
+        $("#myimg4").css({width:200,height:200});
+        $("#myimg5").css({width:200,height:200});
+
+
+      });
+
+
+
+     
+		});
+	</script>
+	<script>
+         function my() {
+
+          var x, text;
+         x = document.getElementById("Num").value;
+         if (isNaN(x) || x.length> 10||x=="") {
+         text = "Enter Valid Number";
+         alert(text);
+         return false;
+          } 
+   
+
+          var y,te;
+          y=document.getElementById("Name").value;
+          if(isNaN(y))
+          {
+     	
+          }
+          else if(y=="")
+          {
+     	   te="Enter Name";
+          	alert(te);
+          }
+          else
+          {
+     	   te="NotaName";
+     	    alert(te);
+          }
+           var e,t;
+           e=document.getElementById("mail").value;
+           if (e.length>100) {
+           	t="too Large";
+           	alert(t);
+     
+           }
+          }
+  </script>
+  <script>
+    $(document).ready(function()
+    {
+      $("#he").fadeIn("slow")
+
+    })
+  </script>
+</head>
+<body style="margin:0px;">
+    <div id="main" style="background-color:#64DD17; margin:0px; ">
+     	 <ul style="float: left;" >
+
+     	<!--  <div id="one1" style="float: right;"><li>about</li></div> -->
+     	 	<div id="one2" style="float: right;"><li>gallery</li></div>
+     	 	<div id="one3" style="float: right;"><li>contact</li></div>
+     	 	<div id="one4" style="float: right;"> <li>home</li></div>
+     	 </ul>
+         <br>
+         <br>
+         <br>
+         <br>
+         <hr>
+ </div>
+
+      <div id="home" style="display: none; font-family: cursive;">
+         <h1 style="text-align: center;margin-top:100px;">What-We-Do</h1> 
+      	 <div class="home2" style="border-top:1px solid blue;color:black; width: 25%;margin-top: 100px;margin-left: 10px; text-align: center;">
+        	  <h2 style="border-bottom : 1px solid #9c9ca8 ">Modern Design</h2>
+        	  <p>Our design includes innovative,<br> technological updates and economically<br> feasible designs</p>
+        	</div><br><br>
+        	<div class="home2" style="border-top:1px solid green;width: 25%;color: black; margin-left: 500px;margin-top: -200px; text-align: center;">
+        	  <h2 style="border-bottom : 1px solid #9c9ca8 ">Organized Codes</h2>
+        	  <p>We provide optimized performance<br> adapatable and computationally <br> efficient code</p>
+        	</div>
+
+          <div class="home2" style="border-top:1px solid red;width: 25%;color:black; margin-left: 1000px;margin-top: -160px;text-align: center;">
+            <h2 style="border-bottom : 1px solid #9c9ca8 ">E-commerce ready</h2>
+            <p>We provide integrated payment <br>olutions using different open source <br>and enterprise tools</p>
+          </div>  
+
+
+          <h1 style="text-align: center;margin-top:200px; border-bottom: 1px solid orange;">OUR ORGANIZATIONAL VALUES</h1>
+
+           <div style="margin-left: 40px;">
+             <h3 style="color: orange">WE BUILD - Best Teams</h3>
+             <p>We dedicate our strengths, skills, knowledge and <br>experience to maintain high standards of delivery.</p>
+           </div>  	
+           <div style="margin-left: 1000px;margin-top: -100px;">
+                <h3 style="color: orange">OUR PRIDE - Quality of Work</h3>
+                <p>We strive to follow high standards of excellence<br> across all deliverables and departments.</p>
+           </div>
+            <div style="margin-left: 40px;">
+                <h3 style="color: orange">WE EMPHASIZE - Creativity</h3>
+                <p>We value the innovation and creativity.<br> We always move out of the crowd</p>
+           </div>
+            <div style="margin-left: 1000px;margin-top: -100px">
+                <h3 style="color: orange">OUR CLIENTS - Comes First</h3>
+                <p>We strive to follow high standards of excellence<br> across all deliverables and departments.</p>
+           </div>
+            <div style="margin-left: 500px;">
+                <h3 style="color: orange">OUR PRIDE - Quality of Work</h3>
+                <p>We understand our customers’ needs and consistently <br>deliver best results with 100% dedication.</p>
+           </div>
+
+
+      </div>
+      <div id="gallery" style="display: none; font-family: cursive;">
+        	 <h1 style="margin-left: 600px">Gallery</h1>
+         		<img id="myimg1"  src="g2.jpg" width="250px;"height="250px;" style="border-radius: 8px;margin-left: 200px;position: absolute;">
+       	    <img id="myimg2" src="g7.jpg" width="250px;"height="250px;" style="border-radius: 8px;margin-left: 500px;position: absolute;">
+        		<img id="myimg3" src="g6.jpg" width="250px;"height="250px;" style="border-radius: 8px;margin-left: 800px;position: absolute;">
+        		<img id="myimg4" src="g5.jpg" width="250px;"height="250px;" style="border-radius: 8px;margin-left: 700px;margin-top: 300px; position: absolute;">
+        		<img id="myimg5" src="g9.jpg" width="250px;"height="250px;" style="border-radius: 8px;margin-left: 300px;margin-top: 300px;position: absolute;">
+      </div>
+
+      <div id="contact" style="display:none ;font-family: cursive;">
+
+        	<h1 style="margin-left: 500px;margin-bottom: 100px;border-bottom:1px solid red width:10px;">How Can We Help You</h1>
+        	<div style="margin-left: 300px;">
+        		<form name="Form" method="post">
+        			Name<input    id="Name" type="text" name="name"  style="margin-left:50px;"><br>
+        			Number<input  id="Num" style="margin-left:35px;"><br>
+        			<p>Should be less than 100</p>
+              Queries <textarea id="mail" > </textarea>
+        		
+        			<button type="button" onclick="my()">Submit</button>
+
+
+        		</form>
+        	</div>
+      </div> 
+
+
+      <div id="about" style="display: none; font-family: cursive;">
+
+        	<h1 id="he" style="margin-left: 500px;margin-top: 250px;display: none">underConstruction</h1>
+      </div>
+
+     <div id="home1"></div>
+     <div id="gallery1"></div>
+     <div id="contact1"></div>
+     <div id="about1"></div>
+
+
+</body>
+</html>
